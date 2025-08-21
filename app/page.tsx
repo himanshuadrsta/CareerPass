@@ -81,9 +81,11 @@ export default function HeroViredLanding() {
       <header className="sticky top-0 z-50 flex items-center justify-between px-6 py-4 border-b border-gray-800 bg-black">
         <div className="flex items-center gap-8">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center">
-              <span className="text-white font-bold text-sm">C</span>
-            </div>
+            <img
+              src="careerPassLogo.jpeg"                 // <-- put logo.png inside /public
+              alt="CareerPass Logo"
+              className="w-8 h-8 rounded"     // same size as before, rounded if needed
+            />
             <span className="text-white font-semibold">CareerPass</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
