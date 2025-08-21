@@ -236,7 +236,7 @@ export default function HeroViredLanding() {
             </button>
 
             {/* Slide Content */}
-            <div className="mx-16">
+            {/* <div className="mx-16">
               <Card className={`${programSlides[currentSlide].color} transition-all duration-500`}>
                 <CardContent className="p-8">
                   <h3 className="font-bold text-2xl mb-6 text-center">{programSlides[currentSlide].title}</h3>
@@ -247,7 +247,7 @@ export default function HeroViredLanding() {
                   </ul>
                 </CardContent>
               </Card>
-            </div>
+            </div> */}
 
             {/* Slide Indicators */}
             <div className="flex justify-center mt-6 gap-2">
