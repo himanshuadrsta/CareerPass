@@ -21,6 +21,21 @@ export default function HeroViredLanding() {
     scrollToSection(sectionId)
   }
 
+  // a tiny helper to map your slide "color" or "theme" to tasteful backgrounds
+  const slideBg: Record<string, string> = {
+    blue:
+      "bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/20",
+    green:
+      "bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-950/30 dark:to-teal-950/20",
+    purple:
+      "bg-gradient-to-br from-violet-50 to-fuchsia-50 dark:from-violet-950/30 dark:to-fuchsia-950/20",
+    amber:
+      "bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/30 dark:to-orange-950/20",
+    neutral:
+      "bg-white dark:bg-zinc-900" // safe default “card” surface
+  };
+
+
   const programSlides = [
     {
       title: "Week 1-2: Foundation & Problem Analysis",
@@ -215,11 +230,25 @@ export default function HeroViredLanding() {
             </button>
 
             {/* Slide Content */}
-            <div className="mx-16">
-              <Card className={`${programSlides[currentSlide].color} transition-all duration-500`}>
-                <CardContent className="p-8">
-                  <h3 className="font-bold text-2xl mb-6 text-center">{programSlides[currentSlide].title}</h3>
-                  <ul className="space-y-3 text-lg max-w-2xl mx-auto">
+            <div className="px-4 md:px-6">
+              <Card
+                className={[
+                  // width & layout
+                  "w-full max-w-3xl lg:max-w-4xl mx-auto",
+                  // spacing & elevation
+                  "rounded-2xl shadow-lg border border-black/5 dark:border-white/10",
+                  // animated transitions between slides
+                  "transition-all duration-500",
+                  // background based on the current slide theme (fallback to neutral)
+                  slideBg[programSlides[currentSlide].color] ?? slideBg.neutral
+                ].join(" ")}
+              >
+                <CardContent className="p-6 md:p-8">
+                  <h3 className="font-semibold text-xl md:text-2xl tracking-tight text-center mb-5 md:mb-6 text-zinc-900 dark:text-zinc-100">
+                    {programSlides[currentSlide].title}
+                  </h3>
+
+                  <ul className="space-y-3 md:space-y-4 text-base md:text-lg leading-relaxed max-w-2xl mx-auto text-zinc-700 dark:text-zinc-300 list-disc list-inside">
                     {programSlides[currentSlide].content.map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -227,6 +256,7 @@ export default function HeroViredLanding() {
                 </CardContent>
               </Card>
             </div>
+
 
             {/* Slide Indicators */}
             <div className="flex justify-center mt-6 gap-2">
