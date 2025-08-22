@@ -23,46 +23,30 @@ export default function HeroViredLanding() {
 
   const programSlides = [
     {
-      title: "Week 1-2: Python & Statistics Foundation",
+      title: "Week 1-2: Foundation & Problem Analysis",
       content: [
-        "• Python Programming Fundamentals",
-        "• Statistics and Mathematics for ML",
-        "• Data Manipulation with Pandas",
-        "• Data Visualization with Matplotlib",
-        "• NumPy for Numerical Computing",
+        "Understanding project requirements, data exploration, and problem statement analysis",
       ],
       color: "bg-cyan-500 text-black",
     },
     {
-      title: "Week 3-4: Machine Learning Core",
+      title: "Week 3-4: Data Collection & Preprocessing",
       content: [
-        "• Supervised Learning Algorithms",
-        "• Unsupervised Learning Techniques",
-        "• Model Evaluation and Selection",
-        "• Feature Engineering and Selection",
-        "• Cross-validation and Hyperparameter Tuning",
+        "Gathering datasets, cleaning data, and preparing for model development",
       ],
       color: "bg-green-500 text-black",
     },
     {
-      title: "Week 5-6: Deep Learning & Neural Networks",
+      title: "Week 5-6: Model Development & Training",
       content: [
-        "• Deep Learning Fundamentals",
-        "• Neural Networks and CNNs",
-        "• RNNs and LSTM Networks",
-        "• Transfer Learning Techniques",
-        "• Computer Vision Applications",
+        "Building AI/ML models, training algorithms, and optimizing performance",
       ],
       color: "bg-purple-500 text-white",
     },
     {
-      title: "Week 7-8: Advanced Topics & Deployment",
+      title: "Week 7-8: Deployment & Presentation",
       content: [
-        "• Natural Language Processing",
-        "• Model Deployment and MLOps",
-        "• Cloud Platforms (AWS/Azure)",
-        "• Capstone Project Development",
-        "• Portfolio Building & Presentation",
+        "Deploying solutions, creating presentations, and showcasing final projects",
       ],
       color: "bg-orange-500 text-black",
     },
@@ -143,8 +127,7 @@ export default function HeroViredLanding() {
         <div className="text-center mb-12">
           <h1 className="text-5xl lg:text-6xl font-bold mb-6">Be Industry Ready in 8 Weeks</h1>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Master AI/ML through real-world projects and land your dream job with our 8-week intensive program. Get
-            industry-ready skills with hands-on experience.
+            Master AI/ML through 8-week Project-based Learning Program guided by IIT/NIT alumni and industry experts from top companies. Get industry-ready skills with hands-on experience.
           </p>
           <div className="flex items-center justify-center gap-4 mb-8">
             <Button
@@ -177,40 +160,34 @@ export default function HeroViredLanding() {
               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🚀</span>
               </div>
-              <h3 className="text-xl font-bold mb-3">Fast-track your plans</h3>
+              <h3 className="text-xl font-bold mb-3">Fast-track your Career</h3>
               <p className="text-gray-400 text-sm">
-                Land your dream job in just 8 weeks with our intensive, industry-focused curriculum designed for rapid
-                skill development.
+                Get Industry-ready skills in just 8 weeks with our intensive, industry-focused project-based learning program designed for rapid skill development.
               </p>
             </div>
             <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
               <div className="w-16 h-16 bg-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">👨‍🏫</span>
               </div>
-              <h3 className="text-xl font-bold mb-3">Expert Mentorship</h3>
+              <h3 className="text-xl font-bold mb-3">Expert Mentorship from IIT/NIT Alumni</h3>
               <p className="text-gray-400 text-sm">
-                Learn from industry veterans with 10+ years of experience in AI/ML at top tech companies like Google,
-                Microsoft, and Amazon.
+                Learn from IIT/NIT Alumni or industry veterans with experience in AI/ML.
               </p>
             </div>
             <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
               <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">💻</span>
               </div>
-              <h3 className="text-xl font-bold mb-3">Online & Offline</h3>
+              <h3 className="text-xl font-bold mb-3">Real-world Projects</h3>
               <p className="text-gray-400 text-sm">
-                Flexible learning options with both online sessions and offline workshops to suit your schedule and
-                learning preferences.
+                Work on most in demand real-world projects in industry-ready setup under guidance of IIT/NIT Alumni & Industry Veterans.
               </p>
             </div>
           </div>
 
           <div className="text-center mt-12">
             <p className="text-gray-400 text-sm max-w-3xl mx-auto">
-              CareerPass is designed for working professionals who want to transition into AI/ML roles quickly. Our
-              proven methodology has helped 500+ professionals land high-paying jobs in top companies. With personalized
-              mentorship, real-world projects, and guaranteed interview opportunities, we ensure your success in the
-              AI/ML industry.
+              CareerPass is project-based learning platform for College students and early working professionals who want to accel in AI/ML roles quickly. Our proven methodology has helped 250+ professionals land high-paying jobs in top companies and startups. With personalized mentorship by IIT/NIT Alumni & Veteran Industry Experts and real-world projects, we ensure your success in the AI/ML industry.
             </p>
           </div>
         </div>
@@ -219,7 +196,7 @@ export default function HeroViredLanding() {
       <section id="program" className="px-6 py-16 relative">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold">8-Week AI/ML Learning Program</h2>
+            <h2 className="text-4xl font-bold">How 8-Week AI/ML Learning Program Works</h2>
           </div>
 
           <div className="relative">
@@ -238,7 +215,7 @@ export default function HeroViredLanding() {
             </button>
 
             {/* Slide Content */}
-            {/* <div className="mx-16">
+            <div className="mx-16">
               <Card className={`${programSlides[currentSlide].color} transition-all duration-500`}>
                 <CardContent className="p-8">
                   <h3 className="font-bold text-2xl mb-6 text-center">{programSlides[currentSlide].title}</h3>
@@ -249,7 +226,7 @@ export default function HeroViredLanding() {
                   </ul>
                 </CardContent>
               </Card>
-            </div> */}
+            </div>
 
             {/* Slide Indicators */}
             <div className="flex justify-center mt-6 gap-2">
@@ -270,18 +247,16 @@ export default function HeroViredLanding() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg mb-2">PROJECTS & PORTFOLIO BUILDING</h3>
                 <p className="text-sm">
-                  Build 5+ real-world projects for your portfolio including predictive analytics, recommendation
-                  systems, and computer vision applications.
+                  Build 2+ real-world projects for your portfolio from predictive analytics, recommendation systems, computer vision applications and others.
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-gray-800 cursor-pointer hover:transform hover:scale-105 transition-transform">
               <CardContent className="p-6">
-                <h3 className="font-bold text-lg mb-2">INTERVIEW PREPARATION & PLACEMENT</h3>
+                <h3 className="font-bold text-lg mb-2">Real-time Skill Building & Feedback</h3>
                 <p className="text-sm">
-                  Comprehensive interview prep with mock interviews, technical assessments, and direct placement
-                  assistance with our partner companies.
+                  Comprehensive Skill Building with the relevant industry projects Keeps you up to date as per the latest Industry Standard.
                 </p>
               </CardContent>
             </Card>
@@ -290,8 +265,7 @@ export default function HeroViredLanding() {
               <CardContent className="p-6">
                 <h3 className="font-bold text-lg mb-2">INDUSTRY MENTORSHIP & NETWORKING</h3>
                 <p className="text-sm">
-                  1-on-1 mentorship sessions with industry experts and access to our exclusive alumni network of 500+
-                  AI/ML professionals.
+                  Mentorship sessions with IIT/NIT Alumni & industry experts and access to our exclusive network of AI/ML professionals.
                 </p>
               </CardContent>
             </Card>
@@ -299,8 +273,7 @@ export default function HeroViredLanding() {
 
           <div className="text-center mt-8">
             <p className="text-gray-400 text-sm">
-              Super Cohort: Comprehensive end-to-end learning experience with industry-relevant skills and guaranteed
-              job placement support.
+              Super Cohort: Comprehensive end-to-end learning experience with industry-relevant tools leading to industry-level skill development.
             </p>
           </div>
         </div>
@@ -310,35 +283,35 @@ export default function HeroViredLanding() {
       <section id="experts" className="px-6 py-16 bg-gray-900">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold">Learn from Industry Experts</h2>
+            <h2 className="text-4xl font-bold">Learn from Industry Experts (50+ Mentors)</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
               <div className="w-24 h-24 bg-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-lg">DR</span>
+                <span className="text-white font-bold text-lg">RM</span>
               </div>
-              <h3 className="text-xl font-bold mb-2">Dr. Rajiv Sharma</h3>
-              <p className="text-cyan-400 text-sm mb-2">Senior Data Scientist</p>
-              <p className="text-gray-400 text-xs">10+ years at Google & Microsoft</p>
+              <h3 className="text-xl font-bold mb-2">Rohan More</h3>
+              <p className="text-cyan-400 text-sm mb-2">AI Engineer</p>
+              <p className="text-gray-400 text-xs">IIT Bombay, 5+ years</p>
             </div>
 
             <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
               <div className="w-24 h-24 bg-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-lg">PK</span>
+                <span className="text-white font-bold text-lg">SK</span>
               </div>
-              <h3 className="text-xl font-bold mb-2">Priya Kapoor</h3>
-              <p className="text-cyan-400 text-sm mb-2">ML Engineering Lead</p>
-              <p className="text-gray-400 text-xs">8+ years at Amazon & Netflix</p>
+              <h3 className="text-xl font-bold mb-2">Sumit Kumar</h3>
+              <p className="text-cyan-400 text-sm mb-2">AI/ML Veteran</p>
+              <p className="text-gray-400 text-xs">IIT Kharagpur, IIM Calcutta, 10+ years</p>
             </div>
 
             <div className="text-center cursor-pointer hover:transform hover:scale-105 transition-transform">
               <div className="w-24 h-24 bg-cyan-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white font-bold text-lg">AK</span>
+                <span className="text-white font-bold text-lg">HJ</span>
               </div>
-              <h3 className="text-xl font-bold mb-2">Amit Kumar</h3>
-              <p className="text-cyan-400 text-sm mb-2">AI Research Scientist</p>
-              <p className="text-gray-400 text-xs">12+ years at Meta & OpenAI</p>
+              <h3 className="text-xl font-bold mb-2">Heerak J</h3>
+              <p className="text-cyan-400 text-sm mb-2">AI Engineering Lead</p>
+              <p className="text-gray-400 text-xs">NIT Trichy, IIIT Hyderabad, 10+ years</p>
             </div>
           </div>
         </div>
@@ -386,7 +359,7 @@ export default function HeroViredLanding() {
             <div className="bg-black bg-opacity-50 rounded-lg p-6 max-w-md mx-auto cursor-pointer hover:transform hover:scale-105 transition-transform">
               <h3 className="text-xl font-bold mb-2">Projects & Graduation</h3>
               <p className="text-gray-300 text-sm">
-                Complete your capstone project, showcase your portfolio, and get certified as an AI/ML professional
+                Complete your capstone projects, showcase your portfolio, and get certified as an AI/ML professional
                 ready for industry roles.
               </p>
             </div>
@@ -399,20 +372,20 @@ export default function HeroViredLanding() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="cursor-pointer hover:transform hover:scale-105 transition-transform">
-              <div className="text-4xl font-bold mb-2">500+</div>
+              <div className="text-4xl font-bold mb-2">250+</div>
               <div className="text-sm">Successful Career Transitions</div>
             </div>
             <div className="cursor-pointer hover:transform hover:scale-105 transition-transform">
               <div className="text-4xl font-bold mb-2">95%</div>
-              <div className="text-sm">Job Placement Rate</div>
+              <div className="text-sm">Satisfaction Rate</div>
             </div>
             <div className="cursor-pointer hover:transform hover:scale-105 transition-transform">
-              <div className="text-4xl font-bold mb-2">80%</div>
+              <div className="text-4xl font-bold mb-2">60%</div>
               <div className="text-sm">Salary Increase Average</div>
             </div>
             <div className="cursor-pointer hover:transform hover:scale-105 transition-transform">
               <div className="text-4xl font-bold mb-2">50+</div>
-              <div className="text-sm">Partner Companies</div>
+              <div className="text-sm">Mentors from IIT/NIT</div>
             </div>
           </div>
         </div>
@@ -435,14 +408,14 @@ export default function HeroViredLanding() {
                 </div>
                 <p className="text-gray-300 text-sm mb-4">
                   "The program completely transformed my career. I went from a non-tech background to landing a Data
-                  Scientist role at a Fortune 500 company in just 8 weeks!"
+                  Scientist role at a Fortune 500 company in just 8 weeks. Special thanks to Sumit Sir!"
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center">
-                    <span className="text-black font-bold text-sm">AS</span>
+                    <span className="text-black font-bold text-sm">A</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">Anita Sharma</p>
+                    <p className="font-semibold text-sm">Anita</p>
                     <p className="text-gray-400 text-xs">Data Scientist at TCS</p>
                   </div>
                 </div>
@@ -457,15 +430,15 @@ export default function HeroViredLanding() {
                   ))}
                 </div>
                 <p className="text-gray-300 text-sm mb-4">
-                  "Amazing mentorship and hands-on projects. The career support team helped me negotiate a 60% salary
+                  "Amazing mentorship from experienced IITians & NITians (Sumit, Heerak, Abhishek) and hands-on projects. The career support team helped me negotiate a 60% salary
                   increase. Highly recommend this program!"
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center">
-                    <span className="text-black font-bold text-sm">RK</span>
+                    <span className="text-black font-bold text-sm">R</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">Rohit Kumar</p>
+                    <p className="font-semibold text-sm">Rohit</p>
                     <p className="text-gray-400 text-xs">ML Engineer at Flipkart</p>
                   </div>
                 </div>
@@ -480,16 +453,16 @@ export default function HeroViredLanding() {
                   ))}
                 </div>
                 <p className="text-gray-300 text-sm mb-4">
-                  "The curriculum is perfectly designed for working professionals. I could balance my job while learning
-                  and successfully transitioned to AI/ML."
+                  "The program is perfectly sync with early working professionals. I could balance my job while learning
+                  and successfully transitioned to AI."
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center">
-                    <span className="text-black font-bold text-sm">PG</span>
+                    <span className="text-black font-bold text-sm">P</span>
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">Priya Gupta</p>
-                    <p className="text-gray-400 text-xs">AI Researcher at Microsoft</p>
+                    <p className="font-semibold text-sm">Priya</p>
+                    <p className="text-gray-400 text-xs">AI Researcher at Samsung</p>
                   </div>
                 </div>
               </CardContent>
@@ -603,7 +576,7 @@ export default function HeroViredLanding() {
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
-                  Industry mentor assignment
+                  Industry mentors & projects allotment
                 </li>
                 <li className="flex items-center gap-2">
                   <CheckCircle className="w-5 h-5" />
@@ -660,11 +633,13 @@ export default function HeroViredLanding() {
                   <label className="block text-sm font-medium mb-2">Preferred Specialization</label>
                   <select className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
                     <option>Choose your specialization</option>
+                    <option>AI Product Development</option>
                     <option>Machine Learning</option>
                     <option>Deep Learning</option>
                     <option>Data Science</option>
                     <option>Computer Vision</option>
                     <option>NLP</option>
+                    <option>Not Sure</option>
                   </select>
                 </div>
                 <Button type="submit" className="w-full bg-black text-white hover:bg-gray-800 py-3 cursor-pointer">
@@ -683,17 +658,21 @@ export default function HeroViredLanding() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-8 h-8 bg-red-600 rounded flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">C</span>
+                  <img
+              src="careerPassLogo.jpeg"                 // <-- put logo.png inside /public
+              alt="CareerPass Logo"
+              className="w-8 h-8 rounded"     // same size as before, rounded if needed
+            />
                 </div>
                 <span className="text-white font-semibold">CareerPass</span>
               </div>
               <p className="text-gray-400 text-sm mb-4">
-                Transform your career with industry-focused AI/ML programs designed for working professionals.
+                Transform your career with industry-focused project-based learning programs designed for college students & early working professionals.
               </p>
               <div className="space-y-2 text-sm text-gray-400">
-                <p>📧 info@careerpass.com</p>
-                <p>📞 +91 9876543210</p>
-                <p>📍 Bangalore, India</p>
+                <p>📧 info@careerpass.in</p>
+                <p>📞 +91 8920929854</p>
+                <p>📍 New Delhi, India</p>
               </div>
             </div>
             <div>
@@ -816,7 +795,7 @@ export default function HeroViredLanding() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2025 CareerPass. All rights reserved. | A Hero Group Company</p>
+            <p>&copy; 2025 CareerPass. All rights reserved. | A Hobby Caddy Group Company</p>
           </div>
         </div>
       </footer>
