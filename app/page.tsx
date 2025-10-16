@@ -130,34 +130,161 @@ export default function HeroViredLanding() {
           <Button
             size="sm"
             className="bg-cyan-500 hover:bg-cyan-600 cursor-pointer"
-            onClick={() => scrollToSection("enquiry-form")}
+            onClick={() => scrollToSection("placement-form")}
           >
-            Enroll Now
+            Register Now
           </Button>
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section - Placement Drive */}
       <section id="hero" className="px-6 py-16 max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-5xl lg:text-6xl font-bold mb-6">Be Industry Ready in 8 Weeks</h1>
+          <div className="inline-block bg-red-600 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 animate-pulse">
+            PLACEMENT DRIVE OPEN NOW
+          </div>
+          <h1 className="text-5xl lg:text-6xl font-bold mb-6">Join Our Exclusive Placement Drive</h1>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-            Master AI/ML through 8-week Project-based Learning Program guided by IIT/NIT alumni and industry experts from top companies. Get industry-ready skills with hands-on experience.
+            Top companies are hiring! Register now for our placement drive and connect with leading employers looking for talented candidates like you.
           </p>
           <div className="flex items-center justify-center gap-4 mb-8">
             <Button
-              onClick={() => scrollToSection("enquiry-form")}
-              className="bg-cyan-500 hover:bg-cyan-600 px-8 py-3 cursor-pointer"
+              onClick={() => scrollToSection("placement-form")}
+              className="bg-cyan-500 hover:bg-cyan-600 px-8 py-3 cursor-pointer text-lg"
             >
-              Start Your Journey
+              Register for Placement Drive
             </Button>
             <Button
               onClick={() => scrollToSection("program")}
               variant="outline"
               className="px-8 py-3 bg-transparent cursor-pointer"
             >
-              Live Program
+              Learn More
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Placement Drive Registration Form Section */}
+      <section id="placement-form" className="relative px-6 py-20 overflow-hidden">
+        {/* Animated background gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900/20 to-cyan-900/30"></div>
+
+        <div className="relative max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-500/30 rounded-full px-6 py-2 mb-6">
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-cyan-500"></span>
+              </span>
+              <span className="text-cyan-400 font-semibold text-sm">REGISTRATION OPEN</span>
+            </div>
+            <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent">
+              Register for Placement Drive
+            </h2>
+            <p className="text-gray-300 text-xl max-w-3xl mx-auto leading-relaxed">
+              Take the first step towards your dream career. Fill out the registration form and get direct access to top hiring companies.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-[380px_1fr] gap-10 items-start">
+            {/* Left side - Benefits Cards */}
+            <div className="space-y-4">
+              {/* Benefit Card 1 */}
+              <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/5 backdrop-blur-sm border border-cyan-500/20 rounded-xl p-6 hover:border-cyan-500/40 transition-all duration-300 cursor-pointer hover:transform hover:scale-105">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-6 h-6 text-cyan-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-2">Top Companies</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed">Connect with recruiters from leading tech companies and startups</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Benefit Card 2 */}
+              <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/5 backdrop-blur-sm border border-blue-500/20 rounded-xl p-6 hover:border-blue-500/40 transition-all duration-300 cursor-pointer hover:transform hover:scale-105">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-blue-500/20 flex items-center justify-center flex-shrink-0">
+                    <Star className="w-6 h-6 text-blue-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-2">Fast Track Process</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed">Skip the queue and get direct interview opportunities</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Benefit Card 3 */}
+              <div className="bg-gradient-to-br from-purple-500/10 to-pink-500/5 backdrop-blur-sm border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/40 transition-all duration-300 cursor-pointer hover:transform hover:scale-105">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-purple-500/20 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-6 h-6 text-purple-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-2">Career Support</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed">Get expert guidance throughout your placement journey</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Benefit Card 4 */}
+              <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/5 backdrop-blur-sm border border-green-500/20 rounded-xl p-6 hover:border-green-500/40 transition-all duration-300 cursor-pointer hover:transform hover:scale-105">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-lg bg-green-500/20 flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-6 h-6 text-green-400" />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-bold text-lg mb-2">Multiple Roles</h3>
+                    <p className="text-gray-400 text-sm leading-relaxed">Explore diverse opportunities across various domains</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Testimonial */}
+              <div className="bg-gradient-to-br from-amber-500/10 to-orange-500/5 backdrop-blur-sm border border-amber-500/20 rounded-xl p-6 mt-6">
+                <div className="flex gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <p className="text-gray-300 text-sm italic leading-relaxed mb-3">
+                  &quot;CareerPass placement drive helped me land my dream job at a top tech company!&quot;
+                </p>
+                <p className="text-cyan-400 text-xs font-semibold">- Alumni, Class of 2024</p>
+              </div>
+            </div>
+
+            {/* Right side - Form */}
+            <div className="w-full">
+              <div className="rounded-2xl overflow-hidden shadow-2xl border border-cyan-500/20">
+                <iframe
+                  aria-label='Placement Drive Registration Form'
+                  className="w-full"
+                  style={{height: '800px', border: 'none', display: 'block'}}
+                  src='https://forms.zohopublic.in/careerpass1/form/PlacementDriveRegistrationForm/formperma/7fAofD0mHBGoNjhdUg9DGYAoDYgIMCGffUAnnxqMMJ4'
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="text-center mt-12">
+            <div className="inline-block bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-full px-8 py-4">
+              <p className="text-gray-300 text-sm">
+                Having trouble viewing the form?{' '}
+                <a
+                  href='https://forms.zohopublic.in/careerpass1/form/PlacementDriveRegistrationForm/formperma/7fAofD0mHBGoNjhdUg9DGYAoDYgIMCGffUAnnxqMMJ4'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className="text-cyan-400 hover:text-cyan-300 font-semibold underline cursor-pointer transition-colors"
+                >
+                  Open in new window
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
